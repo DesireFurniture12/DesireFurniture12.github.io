@@ -1,0 +1,94 @@
+html,
+body {
+	height: 100%;
+}
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	color: $text;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	li{
+		padding-right: 30px;
+	}
+	button{
+		background-color: $title;
+		border: none;
+		border-radius: 50%;
+		width: 8px;
+		height: 8px;
+		padding: 0;
+		font-size: 0px;
+		cursor: pointer;
+		&:hover{
+			border-radius: 50%;        
+      background-color: #FFEF35;
+      width:8px;
+      height:8px;
+			transition: all .3s;
+		}
+	}
+	li.slick-active{
+		button{
+			background-color: #FFEF35;
+		}
+	}
+}
+.info-mail{
+	color: $title;
+	padding-left: 30px;
+	display: inline-block;
+	margin-bottom: 22px;
+	position: relative;
+	&::before{
+		content: '';
+		background-image: url(../images/mail__icon.svg);
+		position: absolute;
+		top: 9px;
+		left: 0;
+		width: 16px;
+		height: 12px;
+	}
+	&:hover{
+		opacity: .7;
+	}
+}
+
+
+
+
+
+
+
