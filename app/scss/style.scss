@@ -416,7 +416,6 @@
   }
   &__imges{
     background-image: url('../images/content/orange__sofa.jpg');
-    width: 1425px;
     height: 500px;
   }
   &__overlay{
@@ -427,13 +426,11 @@
     background:rgba(#fff, .7);
   }
   &__info{
-    width: 1425px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: 0;
     bottom: 30%;
     right: 0;
     left: 20%;
